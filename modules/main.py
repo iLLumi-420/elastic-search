@@ -8,7 +8,7 @@ from datetime import datetime
 
 
 disable_warnings(InsecureRequestWarning)
-es = Elasticsearch(['https://superadmin:superadmin@localhost:9200'], verify_certs=False)
+es = Elasticsearch(['http://superadmin:superadmin@localhost:9200'], verify_certs=False)
 
 app = FastAPI()
 
@@ -113,6 +113,6 @@ def test():
 
 
     
-if __name__ == "__main__":
-    import uvicorn
-    uvicorn.run(app, host="0.0.0.0", port=8000, ssl_keyfile="/etc/elasticsearch/key.pem", ssl_certfile="/etc/elasticsearch/cert.pem")
+# if __name__ == "__main__":
+#     import uvicorn
+#     uvicorn.run(app, host="0.0.0.0", port=8000, ssl_keyfile="/etc/elasticsearch/key.pem", ssl_certfile="/etc/elasticsearch/cert.pem")
