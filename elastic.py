@@ -18,10 +18,10 @@ def list_indices():
 
     return index_names
 
-indices = list_indices()
-for index in indices:
-    print(index)
-    es.indices.delete(index=index)
+# indices = list_indices()
+# for index in indices:
+#     print(index)
+#     es.indices.delete(index=index)
 
 
 # id1_doc1 = {
