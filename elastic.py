@@ -7,7 +7,7 @@ import pandas as pd
 
 disable_warnings(InsecureRequestWarning)
 
-es = Elasticsearch(['https://superadmin:superadmin@localhost:9200'], verify_certs=False)
+es = Elasticsearch(['http://superadmin:superadmin@localhost:9200'], verify_certs=True)
 
 
 def list_indices():
