@@ -8,7 +8,7 @@ from datetime import datetime
 
 
 disable_warnings(InsecureRequestWarning)
-es = Elasticsearch(['http://superadmin:superadmin@localhost:9200'], verify_certs=False)
+es = Elasticsearch(['http://superadmin:superadmin@localhost:9200'])
 
 app = FastAPI()
 
