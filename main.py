@@ -3,7 +3,6 @@ from urllib3 import disable_warnings
 from urllib3.exceptions import InsecureRequestWarning
 from fastapi import FastAPI, Query
 from typing import Optional
-from elasticsearch_dsl import Q
 from datetime import datetime
 
 
