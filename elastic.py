@@ -220,7 +220,7 @@ def clean_contact_numbers(contact_numbers):
     
 def index_csv_data_to_es(index_name):
 
-    school_path = "../complete_data/updated_school_data.csv"
+    school_path = "../complete_data/school_data.csv"
     location_path = "../complete_data/location_data.csv"
     students_count = "../complete_data/students_number.csv"
 
